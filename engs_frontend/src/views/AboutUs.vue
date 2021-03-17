@@ -7,8 +7,11 @@
       <div class="infoWrapper">
         <div class="aboutInfo">
           <div class="about_1 about">
-            <div class="aboutTitle">
+            <div class="aboutTitle" v-if="!$store.getters.engTranslate">
               Основное
+            </div>
+            <div class="aboutTitle" v-else>
+              Main
             </div>
             <p class="about_section_1_main_text">В English School преподаватели применяют индивидуальный подход при изучении английского языка. С нами разговорный английский станет вашим вторым языком! Вы сможете легко выражаться и поддерживать разговор с носителями языка. Школа английского English School также научит вас выражать свои мысли письменно,читать литературу на иностранном языке. Изучение иностранного языка станет для вас интересным занятием, приносящим удовольствие, а вместе с ним и знания.</p>
             <p class="about_section_1_more">Интересными плюсами обучения в English School можно назвать то, что при изучении английского языка мы:</p>
@@ -35,8 +38,11 @@
             <img v-bind:src="require('@/assets/visual/aboutCover.jpg')" alt="aboutCover">
           </div>
           <div class="about_2 about">
-            <div class="aboutTitle">
+            <div class="aboutTitle" v-if="!$store.getters.engTranslate">
               Обучение
+            </div>
+            <div class="aboutTitle" v-else>
+              Education
             </div>
             <p class="about_section_1_main_text">
               Английский язык является одним из самых популярных на сегодняшний день. Это обусловлено тем,что очень многие страны используют его как второй государственный язык. Практически каждый пятый житель нашей планеты знает его на уровне общения. Поэтому азов,полученных за школьной партой много лет тому назад,не всегда достаточно, чтобы найти общий язык на работе или во время путешествий, что сказывается на качестве выполняемой работы и внутренней неуверенности во время отдыха.
@@ -69,8 +75,11 @@
             </p>
           </div>
           <div class="about_3 about">
-            <div class="aboutTitle">
+            <div class="aboutTitle" v-if="!$store.getters.engTranslate">
               Методика обучения
+            </div>
+            <div class="aboutTitle" v-else>
+              Education methods
             </div>
             <p class="about_section_1_main_text">
               Не секрет, что во всех сферах профессиональной деятельности огромным "плюсом" считается значение иностранных языков. Стоит заняться их изучением сегодня,чтобы завтра они стали вашим "козырем" перед работодателем и коллегами.
@@ -85,8 +94,11 @@
             <p class="about_section_1_more redAccent noLeftSpace">We teach to communicate!</p> 
           </div>
           <div class="about_4 about">
-            <div class="aboutTitle">
+            <div class="aboutTitle" v-if="!$store.getters.engTranslate">
               Наша уникальность
+            </div>
+            <div class="aboutTitle" v-else>
+              Our uniqueness
             </div>
             <p class="about_section_1_main_text">
               Enlish School-это не просто образовательный центр. Это возможность изучать иностранные языки в комфортной атмосфере под руководством профессиональных педагогов.

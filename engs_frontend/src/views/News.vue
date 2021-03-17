@@ -202,7 +202,7 @@ export default {
             content: '';
             display: block;
             width: 0;
-            height: 1.5px;
+            height: 2px;
             background: $coffee;
             transition: width 0.3s;
           }

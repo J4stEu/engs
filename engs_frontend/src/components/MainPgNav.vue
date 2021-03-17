@@ -183,11 +183,11 @@ export default {
                 font-size: 1.9em;
                 margin: $spaceVal * 1.2 + px;
             }
-            @media screen and (min-width:1920px) and (min-height:1200px) {
+            /*@media screen and (min-width:1920px) and (min-height:1200px) {
                 font-size: 2.2em;
                 margin: $spaceVal * 1.5 + px;
             }
-            @media screen and (min-width:2048px) and (min-height:1536px) {
+            /*@media screen and (min-width:2048px) and (min-height:1536px) {
                 font-size: 2.8em;
             }
             @media screen and (min-width:2560px) and (min-height:2048px) {
@@ -196,7 +196,7 @@ export default {
             }
             @media screen and (min-width:3840px) and (min-height:2400px) {
                 font-size: 3.8em;
-            }
+            }*/
         }
     }
     .menuSign {
@@ -255,9 +255,9 @@ export default {
             }
             @media screen and (min-width:1920px) and (min-height:1200px) {
                 font-size: 1.9em;
-                margin: $spaceVal * 1.5 + 2 + px;
+                margin: $spaceVal * 1.2 + px;
             }
-            @media screen and (min-width:2048px) and (min-height:1536px) {
+            /*@media screen and (min-width:2048px) and (min-height:1536px) {
                 font-size: 2.2em;
                 margin: $spaceVal * 1.5 + 6 + px;
             }
@@ -268,7 +268,7 @@ export default {
             @media screen and (min-width:3840px) and (min-height:2400px) {
                 font-size: 3.5em;
                 margin: $spaceVal * 2.5 + 3 + px;
-            }
+            }*/
         }
     }
     .menuFocus {
