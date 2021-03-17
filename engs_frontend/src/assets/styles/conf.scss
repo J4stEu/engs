@@ -1,0 +1,39 @@
+@import './normalize.scss';
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&display=swap');
+
+//Font settings
+$fFamily: 'Raleway', sans-serif;
+$fReqular: 400;
+$fMedium: 500;
+$fBold: 700;
+
+//colors settings
+$lightCoffee: #FFE4B4;
+$coffee: #A57869;
+$red: #CB3028;
+
+//default shadow
+$shadow: 0px 0px 5px 0px rgba(50, 50, 50, 0.5);
+//Const space value settings
+$spaceVal: 30;
+
+//assets settings
+$assPath: '../assets/visual/';
+//MainPg assetes settings
+$MainPgLogoCf: $assPath + 'logo(coffee).svg';
+$MainPgLogo: $assPath + 'logo(red).svg';
+$MainPgBg: $assPath + 'MainBg.svg';
+$TwoBldBg: $assPath + 'twoBld.svg';
+$Wheel: $assPath + 'wheel.svg';
+$phoneBoxes: $assPath + 'phone-boxes-opened.svg';
+$BigBen_LondonEye: $assPath + 'bb_leye.svg';
+$NotFoundBg: $assPath + '404.svg';
+
+//default styles settings
+*{
+    font-family: $fFamily;
+    font-weight: $fReqular;
+}
+body{
+    overflow-y: hidden;
+}
