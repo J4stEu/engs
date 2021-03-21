@@ -1,5 +1,5 @@
 const axios = require('axios').default;
-//axios.defaults.headers.common['Access-Control-Allow-Origin'] = '*';
+axios.defaults.headers.common['Access-Control-Allow-Origin'] = '*';
 
 const state = {
     files: [],
@@ -13,8 +13,8 @@ const actions = {
     initFiles: ({commit}) => {
         if (state.files.length == 0) {
             axios
-            //.post('http://192.168.31.247:5000/api/get_files')
-            .post('/api/get_files')
+            // .get('http://localhost:5000/api/files')
+            .get('/api/files')
             .then(response => {
                 //console.log(response.data)
                 commit('SET_FILES', response.data)

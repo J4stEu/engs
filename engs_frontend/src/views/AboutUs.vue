@@ -3,8 +3,11 @@
     <router-link to="/" class="backToMain">
       <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd"><path d="M12 11.293l10.293-10.293.707.707-10.293 10.293 10.293 10.293-.707.707-10.293-10.293-10.293 10.293-.707-.707 10.293-10.293-10.293-10.293.707-.707 10.293 10.293z"/></svg>
     </router-link>
+    <!-- <div class="info">
+      
+      
+    </div> -->
     <div class="info">
-      <div class="infoWrapper">
         <div class="aboutInfo">
           <div class="about_1 about">
             <div class="aboutTitle" v-if="!$store.getters.engTranslate">
@@ -121,8 +124,11 @@
         </div>
         <div class="filesInfo">
           <div class="filesWrapper">
-            <div class="filesTitle">
+            <div class="filesTitle" v-if="!$store.getters.engTranslate">
               Дополнительный материал
+            </div>
+            <div class="filesTitle" v-else>
+              Additional
             </div>
             <div class="files">
               <div class="filesList">
@@ -137,7 +143,6 @@
           </div>
         </div>
       </div>
-    </div>
   </section>
 </template>
 
@@ -173,19 +178,13 @@ export default {
     align-items: center;
     overflow: auto;
 
-    .info {
-      position: relative;
-      width: 100%;
-      height: 100%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
+    
 
-      .infoWrapper {
+      .info {
         width: calc(100% - #{$spaceVal * 2 + px});
         height: calc(100% - #{$spaceVal * 2 + px});
-        display: grid;
-        grid-template-rows: 3fr 1fr;
+        // display: grid;
+        // grid-template-rows: 3fr 1fr;
 
         div {
           padding: $spaceVal/2 + px;
@@ -306,7 +305,7 @@ export default {
           display: flex;
           flex-direction: column;
           padding-top: 0;
-          margin-bottom: $spaceVal + px;
+          padding-bottom: 45px;
           
           .filesWrapper {
             background: white;
@@ -479,6 +478,6 @@ export default {
           }
         }
       }
-    }
+    
   }
 </style>

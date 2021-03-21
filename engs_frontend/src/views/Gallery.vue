@@ -70,12 +70,12 @@ export default {
     background-size: calc(100% - #{$spaceVal + px});
     display: flex;
     justify-content: center;
-    align-items: center;
+    // align-items: center;
     overflow: auto;
 
     .galleryWrapper {
       width: calc(100% - #{$spaceVal * 3 + px});
-      height: calc(100% - #{$spaceVal * 3 + px});
+      height: max-content;
       display: grid;
       grid-template-columns: 1fr 1fr 1fr 1fr;
       grid-template-rows: auto;
@@ -86,6 +86,7 @@ export default {
       'img8 img8 img9 img10'
       'img8 img8 img11 img12'
       ;
+      margin: $spaceVal + 15 + px;
 
       .galleryImg {
         position: relative;
@@ -97,6 +98,7 @@ export default {
         background-size: cover;
         background-position: center;
         cursor: pointer;
+        box-shadow: $shadow;
 
         @media screen and (min-width:0px) and (max-width:499px) {
           height: $spaceVal*5 + px;
