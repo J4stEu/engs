@@ -6,7 +6,7 @@ Stack:
 - Vue js (Vue CLI, Vue Router, Vuex);
 - Python (Flask).
 
-Src now: http://zss.sut.ru/magister/
+Src now: https://engs.online/
 
 Demo:
 - Preloader
