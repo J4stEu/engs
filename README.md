@@ -7,7 +7,7 @@ Stack:
 - Python (Flask).
 
 Design (by me):
-- Affinity Designer
+- Affinity Designer.
 
 Src now: https://engs.online/
 
