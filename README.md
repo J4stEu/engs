@@ -6,6 +6,9 @@ Stack:
 - Vue js (Vue CLI, Vue Router, Vuex);
 - Python (Flask).
 
+Design (by me):
+- Affinity Designer
+
 Src now: https://engs.online/
 
 Demo:
