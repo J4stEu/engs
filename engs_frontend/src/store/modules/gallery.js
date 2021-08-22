@@ -13,8 +13,8 @@ const actions = {
     initGallery: ({commit}) => {
         if (state.imgs.length == 0) {
             axios
-            .post('http://localhost:5000//api/gallery')
-            // .post('/api/gallery')
+            // .get('http://localhost:5000/api/gallery')
+            .get('/api/gallery')
             .then(response => {
                 //console.log(response.data)
                 commit('SET_GALLERY', response.data)

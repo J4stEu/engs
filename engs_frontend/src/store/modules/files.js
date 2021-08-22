@@ -13,8 +13,8 @@ const actions = {
     initFiles: ({commit}) => {
         if (state.files.length == 0) {
             axios
-            .post('http://localhost:5000/api/get_files')
-            // .post('/api/get_files')
+            // .get('http://localhost:5000/api/files')
+            .get('/api/files')
             .then(response => {
                 //console.log(response.data)
                 commit('SET_FILES', response.data)

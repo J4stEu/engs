@@ -12,8 +12,8 @@ const mutations = {
 const actions = {
     initProverbs: ({commit}) => {
         axios
-        .post('http://localhost:5000/api/proverb')
-        // .post('/api/proverb')
+        // .get('http://localhost:5000/api/proverb')
+        .get('/api/proverb')
         .then(response => {
             //console.log(response.data)
             commit('SET_PROVERBS', response.data)

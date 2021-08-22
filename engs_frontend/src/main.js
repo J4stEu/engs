@@ -1,10 +1,11 @@
 import Vue from 'vue'
 import App from './App.vue'
+import './registerServiceWorker'
+import store from './store'
 import router from './router'
 import axios from 'axios'
-import VueAxios from 'vue-axios'
-import store from './store'
 import './assets/styles/conf.scss'
+import VueAxios from 'vue-axios'
 import VueRellax from 'vue-rellax'
 import VueScrollTo from 'vue-scrollto'
 

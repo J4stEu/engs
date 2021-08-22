@@ -58,8 +58,8 @@ const actions = {
     initNews: ({commit}) => {
         if (state.news.length == 0) {
             axios
-            .post('http://localhost:5000/api/news')
-            // .post('/api/news')
+            // .get('http://localhost:5000/api/news')
+            .get('/api/news')
             .then(response => {
                 //console.log(response.data)
                 commit('SET_NEWS', response.data)
@@ -71,12 +71,16 @@ const actions = {
     },
     initMorePosts: ({commit}) => {
         axios
-        .post('http://localhost:5000/api/get_more_news', {
-            postsCounted: state.news.length
-        })
-        // .post('/api/get_more_news', {
-        //     postsCounted: state.news.length
+        // .get('http://localhost:5000/api/more_news', {
+        //     params: {
+        //         postsCounted: state.news.length
+        //     }
         // })
+        .get('/api/more_news', {
+            params: {
+                postsCounted: state.news.length
+            }
+        })
         .then(response => {
             //console.log(response.data);
             commit('LOAD_MORE_NEWS', response.data);
@@ -90,12 +94,16 @@ const actions = {
     },
     initPost: ({commit, dispatch}, postId) => {
         axios
-        .post('http://localhost:5000/api/init_post', {
-            postId: postId
-        })
-        // .post('/api/init_post', {
-        //     postId: postId
+        // .get('http://localhost:5000/api/init_post', {
+        //     params: {
+        //         postId: postId
+        //     }
         // })
+        .get('/api/init_post', {
+            params: {
+                postId: postId
+            }
+        })
         .then(response => {
             //console.log(response.data);            
             commit('SET_POST', response.data);
@@ -110,12 +118,16 @@ const actions = {
     initNearbyPost: ({commit}, postId) => {
         if (postId < 1) return false
         axios
-        .post('http://localhost:5000/api/init_post', {
-            postId: postId
-        })
-        // .post('/api/init_post', {
-        //     postId: postId
+        // .get('http://localhost:5000/api/init_post', {
+        //     params: {
+        //         postId: postId
+        //     }
         // })
+        .get('/api/init_post', {
+            params: {
+                postId: postId
+            }
+        })
         .then(response => {
             //console.log(response.data);
             commit('NEARBY_POST', response.data);
@@ -126,8 +138,8 @@ const actions = {
     },
     countPosts: ({commit}) => {
         axios
-        .post('http://localhost:5000/api/posts_count')
-        // .post('/api/posts_count')
+        // .get('http://localhost:5000/api/posts_count')
+        .get('/api/posts_count')
         .then(response => {
             //console.log(response.data);
             commit('LAST_POST', response.data);
