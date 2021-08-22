@@ -78,18 +78,18 @@ export default {
     background-size: calc(100% - #{$spaceVal + px});
     display: flex;
     justify-content: center;
-    align-items: center;
     overflow: auto;
     
     .postsWrapper {
       width: calc(100% - #{$spaceVal * 3 + px});
-      height: calc(100% - #{$spaceVal * 3 + px});
+      height: max-content;
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(#{$spaceVal * 10 + px}, 1fr));
       grid-auto-rows: #{$spaceVal * 10 + px};
       grid-gap: $spaceVal/2 + px;
       justify-items: center;
       align-items: center;
+      margin: 45px;
 
       @media screen and (min-width:0px) and (max-width:389px) {
         grid-template-columns: repeat(auto-fit, minmax(#{$spaceVal * 10 - 60 + px}, 1fr));

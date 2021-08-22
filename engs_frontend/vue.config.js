@@ -62,8 +62,8 @@ module.exports = {
 
     }
   },
-  publicPath: '/',
+  // publicPath: '/',
   productionSourceMap: false,
-  outputDir: '../static/engs_frontendEngine',
-  assetsDir: '../shared_assets/frontend_assets'
+  // outputDir: '../static/engs_frontendEngine',
+  // assetsDir: '../shared_assets/frontend_assets'
 };
