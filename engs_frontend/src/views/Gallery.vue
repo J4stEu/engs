@@ -98,6 +98,7 @@ export default {
         background-size: cover;
         background-position: center;
         cursor: pointer;
+        box-shadow: $shadow;
 
         @media screen and (min-width:0px) and (max-width:499px) {
           height: $spaceVal*5 + px;

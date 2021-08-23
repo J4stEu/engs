@@ -57,9 +57,9 @@ module.exports = {
           'sizes': '150x150',
           'type': 'image/png',
         },
-      ]
+      ],
+      start_url: "/",
     },
-    "start_url": "/"
   },
   publicPath: '/',
   productionSourceMap: false,

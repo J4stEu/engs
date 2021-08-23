@@ -124,8 +124,11 @@
         </div>
         <div class="filesInfo">
           <div class="filesWrapper">
-            <div class="filesTitle">
+            <div class="filesTitle" v-if="!$store.getters.engTranslate">
               Дополнительный материал
+            </div>
+            <div class="filesTitle" v-else>
+              Additional
             </div>
             <div class="files">
               <div class="filesList">
