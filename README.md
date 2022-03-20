@@ -6,10 +6,10 @@ Stack:
 - Vue js (Vue CLI, Vue Router, Vuex);
 - Python (Flask).
 
-Design (by me):
+Design:
 - Affinity Designer.
 
-Src now: https://engs.online/
+Src now (out of service): https://engs.online/
 
 Demo:
 - Preloader
